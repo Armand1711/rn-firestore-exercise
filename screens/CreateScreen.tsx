@@ -1,6 +1,8 @@
 import { StyleSheet, Text, View, SafeAreaView, TextInput, TouchableOpacity, Switch } from 'react-native'
 import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/core';
+import { db } from '../firebase';
+import { collection, addDoc, Timestamp } from 'firebase/firestore';
 
 const CreateScreen = () => {
     const navigation:any = useNavigation();

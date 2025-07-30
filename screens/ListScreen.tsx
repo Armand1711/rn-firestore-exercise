@@ -3,6 +3,8 @@ import React from 'react'
 import { AntDesign } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import { db } from '../firebase';
+import { collection, onSnapshot } from 'firebase/firestore';
 
 const ListScreen = () => {
 
